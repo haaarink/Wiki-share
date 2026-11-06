@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>위키</title>
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="logo" id="logo" href="#/">위키</a>
+    <nav class="top-nav">
+      <a href="#/all">전체 문서</a>
+      <a href="#/recent">최근 수정</a>
+      <a href="#/random">랜덤</a>
+    </nav>
+    <div class="search">
+      <input id="q" type="search" placeholder="문서 검색  ( / )" autocomplete="off">
+      <div id="sugg" class="sugg" hidden></div>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <main id="main"></main>
+  <aside id="side"></aside>
+</div>
+<footer class="foot" id="foot"></footer>
+<script src="vendor/marked.min.js"></script>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="wiki_data.js"></script>
+<script src="wiki.js"></script>
+</body>
+</html>
